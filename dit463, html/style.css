@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background: linear-gradient(120deg);
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(pic2.jpg);
+    background-size: cover;
+
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 500px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+}
+
+.container h1{
+    color: rgb(215, 145, 243);
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.container form{
+    position: 0 30px;
+    box-sizing: border-box;
+}
+
+form .name{
+    position: relative;
+    border-bottom: 2px solid rgb(215, 145, 243);
+    margin: 10px 0;
+}
+
+.name input{
+    width: auto;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background-color: none;
+    outline: none;
+}
+
+.name label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(166, 117, 245);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.name span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: auto;
+    height: 2px;
+    background: rgb(173, 93, 248);
+}
+
+.name input:focus ~ label,
+.name input:valid  ~ label{
+    top: -5px;
+    color: rgb(215, 145, 243);
+}
+
+.pass{
+    text-align: center;
+    margin: -5px 0 5px 5px;
+    color: rgb(255, 15, 15);
+    cursor: pointer;
+    padding: 10px;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 50%;
+    height: 60%;
+    background-color: rgb(126, 21, 175);
+    border-radius: 25px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border: white;
+    margin: 0 0 10px 90px;
+    font-size:x-large;
+    outline: none;
+    
+    
+
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(235, 250, 135);
+    color: rgb(126, 21, 175);
+    border: rgb(161, 3, 182);
+  
+
+}
+
+.signup{
+    
+    text-align: center;
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    margin: -5px 0 20px 10px;
+
+}
+.signup:hover{
+    text-decoration:none;
+}
+
+.signin{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    margin: -5px 0 20px 10px;
+}
+
